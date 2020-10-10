@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+pip = "*"
+bump2version = "*"
+wheel = "*"
+watchdog = "*"
+flake8 = "*"
+tox = "*"
+coverage = "*"
+sphinx = "*"
+twine = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
