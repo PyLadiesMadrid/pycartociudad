@@ -1,4 +1,4 @@
-* pyCartoCiudad version:
+* pycartociudad version:
 * Python version:
 * Operating System:
 

@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use pyCartoCiudad in a project::
+To use pycartociudad in a project::
 
     import pycartociudad
