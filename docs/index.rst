@@ -1,4 +1,4 @@
-Welcome to pyCartoCiudad's documentation!
+Welcome to pycartociudad's documentation!
 ======================================
 
 .. toctree::

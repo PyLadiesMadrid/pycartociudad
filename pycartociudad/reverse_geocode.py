@@ -5,7 +5,6 @@ Reverse geocoding of a location using cartociudad API
 import requests
 
 
-
 def reverse_geocode(latitude, longitude):
     """This function performs reverse geocoding of a location. It returns
     the details of the closest address in Spain.

@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'pyCartoCiudad'
+project = 'pycartociudad'
 copyright = "2020, PyLadies Madrid"
 author = "PyLadies Madrid"
 
@@ -128,7 +128,7 @@ latex_elements = {
 # [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'pycartociudad.tex',
-     'pyCartoCiudad Documentation',
+     'pycartociudad Documentation',
      'PyLadies Madrid', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (master_doc, 'pycartociudad',
-     'pyCartoCiudad Documentation',
+     'pycartociudad Documentation',
      [author], 1)
 ]
 
@@ -151,7 +151,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'pycartociudad',
-     'pyCartoCiudad Documentation',
+     'pycartociudad Documentation',
      author,
      'pycartociudad',
      'One line description of project.',
