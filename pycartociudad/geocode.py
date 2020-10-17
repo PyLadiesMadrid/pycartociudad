@@ -54,9 +54,3 @@ def geocode(full_address: str):
     result = json.loads(result)
 
     return result or {}
-
-
-if __name__ == "__main__":
-    print(geocode('empecinado 40, mostoles'))
-    print(geocode('empecinado 40'))
-    print(geocode('kkkkk'))
