@@ -20,8 +20,8 @@ def reverse_geocode(latitude, longitude, cadastral=False):
     longitude: float
         Point longitude in geographical coordinates (e.g., -3.7227241)
 
-    cadastral: str (optional) (default: False)
-        Used to do a cadastral address reverse geocoding
+    cadastral: bool (optional) (default: False)
+        Set to True if performing cadastral address reverse geocoding
 
     Returns
     -------
