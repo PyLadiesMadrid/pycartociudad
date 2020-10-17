@@ -31,7 +31,7 @@ Features
 Data usage license
 ------------------
 
-The data returned by this package is provided by IGN web services and implies the user's acceptance of a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. More info available [here](http://www.ign.es/web/resources/docs/IGNCnig/FOOT-Condiciones_Uso_eng.pdf).
+The data returned by this package is provided by IGN web services and implies the user's acceptance of a CC-BY 4.0 scne.es license. More info available in the `IGN license specs`_.
 
 Credits
 -------
@@ -40,3 +40,4 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`IGN license specs`: http://www.ign.es/web/resources/docs/IGNCnig/FOOT-Condiciones_Uso_eng.pdf
