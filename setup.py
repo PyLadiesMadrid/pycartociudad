@@ -31,7 +31,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="pyCartoCiudad es un cliente escrito en Python para acceder a la API (REST y WPS) de CartoCiudad, un set de servicios del IGN orientados a datos sobre la cartografía española",
+    description="pycartociudad es un cliente escrito en Python para acceder a la API (REST y WPS) de CartoCiudad, un set de servicios del IGN orientados a datos sobre la cartografía española",
     install_requires=[],
     license="CC-BY 4.0",
     long_description=readme + '\n\n' + history,

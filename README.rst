@@ -1,5 +1,5 @@
 =============
-pyCartoCiudad
+pycartociudad
 =============
 
 
@@ -16,7 +16,7 @@ pyCartoCiudad
 
 
 
-pyCartoCiudad contiene funciones en Python para acceder a la API de CartoCiudad, la API (REST y WPS) del IGN con servicios de cartografía española
+pycartociudad contiene funciones en Python para acceder a la API de CartoCiudad, la API (REST y WPS) del IGN con servicios de cartografía española
 
 
 * Free software: CC-BY 4.0 scne.es
@@ -27,6 +27,11 @@ Features
 --------
 
 * TODO
+
+Data usage license
+------------------
+
+The data returned by this package is provided by IGN web services and implies the user's acceptance of a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. More info available [here](http://www.ign.es/web/resources/docs/IGNCnig/FOOT-Condiciones_Uso_eng.pdf).
 
 Credits
 -------

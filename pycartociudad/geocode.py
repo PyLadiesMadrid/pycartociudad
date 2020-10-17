@@ -6,9 +6,9 @@ Geolocation of Spanish addresses via Cartociudad API calls
 import requests
 
 
-
-def geolocation(full_address):
-    """Gets and prints the spreadsheet's header columns
+def geocode(full_address):
+    """This function performs the geocoding of an address. It returns
+    the details of the closest address in Spain.
 
     Parameters
     ----------
