@@ -9,7 +9,7 @@ from pycartociudad import reverse_geocode
 
 
 def get_location_info(latitude: float, longitude: float, sources: List[str] = None):
-    """Performs a request to the spanish cadastre web API. It returns the cadastral reference of the given location.
+    """Retrieves info from the given location and specified sources. Allowed sources are cadastre, census and geocoding.
 
     Parameters
     ----------
