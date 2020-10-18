@@ -2,11 +2,12 @@
 Get the route between two points using cartociudad API
 """
 
+import json
 import requests
 
 
 def route_between_two_points(lat_init: float, lon_init: float, lat_dest: float,
-                             lon_dest: float, vehicle: bool = False) -> dict:
+                             lon_dest: float, vehicle: bool = False) -> list:
     """This function get the route between two points.
 
     Parameters
@@ -25,10 +26,25 @@ def route_between_two_points(lat_init: float, lon_init: float, lat_dest: float,
 
     Returns
     -------
-     :  dictionary with the following items:
+     :  List with the instructions to follow
 
     """
 
-    pass
+    # base url:
+    base_url = f'http://www.cartociudad.es/services/api/route'\
 
+    request_url = f'{base_url}?orig={lat_init},{lon_init}&dest={lat_init},{lon_dest}' \
+                  f'&locale=es&vehicle={"CAR" if vehicle else "WALK"}'
+
+    request_result = requests.get(request_url)
+
+    if request_result.status_code != 200:
+        return []
+
+    instructions_raw = json.loads(request_result.text)['instructionsData']['instruction']
+
+    instructions_list = [f'{item["description"]} {item["distance"]}.'
+                         for item in instructions_raw]
+
+    return instructions_list
 
