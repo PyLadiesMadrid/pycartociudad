@@ -33,7 +33,7 @@ def route_between_two_points(lat_init: float, lon_init: float, lat_dest: float,
     # base url:
     base_url = f'http://www.cartociudad.es/services/api/route'\
 
-    request_url = f'{base_url}?orig={lat_init},{lon_init}&dest={lat_init},{lon_dest}' \
+    request_url = f'{base_url}?orig={lat_init},{lon_init}&dest={lat_dest},{lon_dest}' \
                   f'&locale=es&vehicle={"CAR" if vehicle else "WALK"}'
 
     request_result = requests.get(request_url)
