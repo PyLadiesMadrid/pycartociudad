@@ -130,7 +130,8 @@ class TestGeocode(unittest.TestCase):
         
     def test_007_geocode_special_characters(self):
         """Test geocode with text with special characters"""
-        self.assertNotEqual({}, geocode('País Vasco'))
+        self.assertEqual({}, geocode(True))
+        self.assertNotEqual({}, geocode(101))
         self.assertNotEqual({}, geocode('Castilla & León'))
         
         
