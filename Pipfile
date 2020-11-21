@@ -15,6 +15,8 @@ coverage = "*"
 sphinx = "*"
 twine = "*"
 black = "*"
+pytest = "*"
+tox-pyenv = "*"
 
 [packages]
 pycartociudad = {path = ".",editable = true}

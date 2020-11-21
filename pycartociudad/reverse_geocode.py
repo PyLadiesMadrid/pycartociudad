@@ -7,7 +7,7 @@ import urllib
 import json
 
 
-def reverse_geocode(latitude, longitude, cadastral=False):
+def reverse_geocode(latitude: float, longitude: float, cadastral: bool = False, error: str = 'raise') -> dict:
     """This function performs reverse geocoding of a location in Spain.
     It returns the closest address details (or cadastral details if)  a
     cadastral reverse geocode is done.
@@ -60,10 +60,6 @@ def reverse_geocode(latitude, longitude, cadastral=False):
         * refCatastral:      Cadastral reference
     """
 
-    # check parameters
-    if not latitude or not longitude:
-        return {}
-
     # build query content
     searchContent = {'lat': latitude,
                      'lon': longitude}
@@ -75,5 +71,20 @@ def reverse_geocode(latitude, longitude, cadastral=False):
     url = 'http://www.cartociudad.es/geocoder/api/geocoder/reverseGeocode'
 
     # perform request
-    r = requests.get(url=url, params=qParams)
-    return json.loads(r.text)
+    try:
+        r = requests.get(url=url, params=qParams)
+        if error == 'raise':
+            r.raise_for_status()
+        elif error == 'ignore':
+            return {}
+    except requests.exceptions.HTTPError as err:
+        raise SystemExit(err)
+
+    try:
+        addrs_details = json.loads(r.text)
+        if error == 'ignore':
+            addrs_details = {}
+    except json.JSONDecodeError as err:
+        raise SystemExit(err)
+
+    return addrs_details
