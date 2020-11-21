@@ -2,6 +2,7 @@
 Get the route between two points using cartociudad API
 """
 
+import re
 import json
 import requests
 
@@ -41,10 +42,19 @@ def route_between_two_points(lat_init: float, lon_init: float, lat_dest: float,
     if request_result.status_code != 200:
         return []
 
-    instructions_raw = json.loads(request_result.text)['instructionsData']['instruction']
+    instructions_raw = json.loads(request_result.text)
 
-    instructions_list = [f'{item["description"]} {item["distance"]}.'
-                         for item in instructions_raw]
+    # parse to float
+    instructions_raw['distance'] = float(instructions_raw['distance'])
 
-    return instructions_list
+    # parse to float in each instruction:
+    re_pattern = r"(\d+) m"
+    for item in instructions_raw['instructionsData']['instruction']:
+        distance_item = item['distance']
+        distance_found = re.findall(re_pattern, distance_item)
+
+        if distance_found and len(distance_found) == 1:
+            item['distance'] = float(distance_found[0])
+
+    return instructions_raw
 
