@@ -2,7 +2,7 @@
 pycartociudad
 =============
 
-.. image:: https://github.com/PyLadiesMadrid/pycartociudad/blob/main/docs/pycartociudad.svg
+.. image:: ./docs/pycartociudad.svg
 
 
 
@@ -44,11 +44,11 @@ Installing
 
 To install the latest published PyPI version of pycartociudad::
 
-pip install pycartociudad
+	pip install pycartociudad
 
 To upgrade an already installed ``pycartociudad`` package from PyPI::
 
-pip install --upgrade pycartociudad
+	pip install --upgrade pycartociudad
 
 
 The ``pycartociudad`` development repository can be found in the `pycartociudad GitHub repository`_. To make a local copy of the ``pycartociudad`` repository, clone it or download is as a zip file.
