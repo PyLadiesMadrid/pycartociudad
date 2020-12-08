@@ -65,6 +65,12 @@ def route_between_two_points(lat_init: float, lon_init: float, lat_dest: float,
     except json.JSONDecodeError as err:
         raise SystemExit(err)
 
+    if instructions_raw['found'] == 'false':
+        # Can not find the route
+        if error == 'raise':
+            raise SystemExit()
+        elif error == 'ignore':
+            return {}
 
     # parse to float
     instructions_raw['distance'] = float(instructions_raw['distance'])
