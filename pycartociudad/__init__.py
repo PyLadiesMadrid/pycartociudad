@@ -2,7 +2,7 @@
 
 __author__ = """PyLadies Madrid"""
 __email__ = "madrid@pyladies.com"
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 # Explicit import of the public functions
 from .geocode import geocode
