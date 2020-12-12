@@ -21,6 +21,7 @@ tox-pyenv = "*"
 [packages]
 pycartociudad = {path = ".",editable = true}
 twine = "*"
+bumpversion = "*"
 
 [requires]
 python_version = "3.8"
