@@ -18,7 +18,6 @@ pycartociudad
 
 
 
-
 pycartociudad contains Python functions to access the CartoCiudad REST and WPS API (REST y WPS) from IGN with spanish cartography services.
 
 
@@ -36,7 +35,7 @@ To use the pycartociudad package you will need to have python installed (at leas
 
 Dependencies can be managed through a pipenv wrapper. In order to install pipenv, check the `pipenv installation documentation`_.
 
-.. _`pipenv installation documentation`_ https://pipenv.pypa.io/en/latest/#install-pipenv-today
+.. _`pipenv installation documentation`: https://pipenv.pypa.io/en/latest/#install-pipenv-today
 
 
 Installing
@@ -88,6 +87,7 @@ Documentation
 -------------
 
 The ``pycartociudad`` documentation can be found in `pycartociudad readthedocs`_.
+
 .. _`pycartociudad readthedocs`: https://pycartociudad.readthedocs.io
 
 Details on the API implementation can be found in the official `Cartociudad API specs`_.
@@ -96,7 +96,9 @@ Details on the API implementation can be found in the official `Cartociudad API 
 
 Contributing
 ------------
-Please read [CONTRIBUTING.rst](https://github.com/PyLadiesMadrid/pycartociudad/blob/main/CONTRIBUTING.rst) for the process of submitting pull requests to us.
+Please read `CONTRIBUTING.rst`_ for the process of submitting pull requests to us.
+
+.. _`CONTRIBUTING.rst`: https://github.com/PyLadiesMadrid/pycartociudad/blob/main/CONTRIBUTING.rst
 
 For details on our code of conduct, check the `PyLadies Code of Conduct`_.
 
@@ -150,7 +152,7 @@ This function gets the route between two points (encoded with their latitude-lon
 >>> for i in d['instructionsData']['instruction']:
 ... 	print(i['description'])
 ... 
-ContinÃºe por GLORIETA CUATRO CAMINOS
+Continúe por GLORIETA CUATRO CAMINOS
 Gire justo a la derecha por CALLE SANTA ENGRACIA
 Gire a la izquierda por CALLE RIOS ROSAS
 Objetivo logrado
@@ -158,11 +160,19 @@ Objetivo logrado
 
 Authors
 -------
-* **Luz Frías** - *Initial work* - [koldLight](https://github.com/koldLight)
+* **Luz Frías** - *Team Lead & Initial work* - `@koldLight`_.
+* **Isabel González** - *Initial work* - `@zupeiza`_.
+* **Beatriz Gómez** - *Initial work* - `@beatriz-stylesage`_.
+* **Alicia Pérez** - *Initial work* - `@aliciapj`_.
+
+.. _@koldLight: https://github.com/koldLight
+.. _@zupeiza: https://github.com/zupeiza
+.. _@beatriz-stylesage: https://github.com/beatriz-stylesage
+.. _@aliciapj: https://github.com/aliciapj
 
 For a list of contributors, check the `PyLadies pycartociudad contributor list`_
 
-.. _`PyLadies pycartociudad contributor list`_ https://github.com/PyLadiesMadrid/pycartociudad/graphs/contributors
+.. _`PyLadies pycartociudad contributor list`: https://github.com/PyLadiesMadrid/pycartociudad/graphs/contributors
 
 
 License
