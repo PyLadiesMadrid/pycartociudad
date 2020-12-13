@@ -4,22 +4,20 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-requests = "*"
-pip = "*"
 bump2version = "*"
 wheel = "*"
-watchdog = "*"
 flake8 = "*"
+pytest = "*"
+tox-pyenv = "*"
 tox = "*"
+bumpversion = "*"
 coverage = "*"
 sphinx = "*"
 twine = "*"
 black = "*"
-pytest = "*"
-tox-pyenv = "*"
 
 [packages]
-pycartociudad = {path = ".",editable = true}
+requests = "*"
 
 [requires]
 python_version = "3.8"
