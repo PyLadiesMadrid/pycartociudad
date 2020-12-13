@@ -162,12 +162,12 @@ Authors
 -------
 * **Luz Frías** - *Team Lead & Initial work* - `@koldLight`_.
 * **Isabel González** - *Initial work* - `@zupeiza`_.
-* **Beatriz Gómez** - *Initial work* - `@beatriz-stylesage`_.
+* **Beatriz Gómez** - *Initial work* - `@beatrizgoa`_.
 * **Alicia Pérez** - *Initial work* - `@aliciapj`_.
 
 .. _@koldLight: https://github.com/koldLight
 .. _@zupeiza: https://github.com/zupeiza
-.. _@beatriz-stylesage: https://github.com/beatriz-stylesage
+.. _@beatrizgoa: https://github.com/beatrizgoa
 .. _@aliciapj: https://github.com/aliciapj
 
 For a list of contributors, check the `PyLadies pycartociudad contributor list`_
