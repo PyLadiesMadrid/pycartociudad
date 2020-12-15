@@ -2,7 +2,7 @@
 pycartociudad
 =============
 
-.. image:: https://github.com/PyLadiesMadrid/pycartociudad/blob/main/docs/pycartociudad.svg
+.. image:: https://raw.githubusercontent.com/PyLadiesMadrid/pycartociudad/4e7043531bfae74ed2b96a5ce66d5d4a07a2dd01/docs/pycartociudad.svg
 
 
 
