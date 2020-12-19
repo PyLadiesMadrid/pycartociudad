@@ -200,6 +200,16 @@ Prints:
     Gire a la izquierda por CALLE RIOS ROSAS
     Objetivo logrado
 
+
+Get static map image
+~~~~~~~~~~~~~~~~~~~~
+
+This function gets a static map centered on an address,
+as a png image.
+
+Please note this function is quite heavy on the server side, it should be used only for single uses. For an extensive use, please consider cached map tiles extraction
+(for an example on this use, please check the ``example_get_map`` in the notebooks directory.
+
 Running the tests
 -----------------
 
