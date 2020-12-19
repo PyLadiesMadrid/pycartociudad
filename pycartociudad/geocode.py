@@ -40,6 +40,9 @@ def geocode(full_address: str):
     # check & parse parameter
     if not full_address:
         return {}
+    
+    if not isinstance(full_address, str):
+        full_address = str(full_address)
 
     full_address = urllib.parse.quote(full_address)
 
