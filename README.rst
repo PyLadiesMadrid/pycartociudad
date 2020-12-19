@@ -14,9 +14,7 @@ pycartociudad
         :target: https://pycartociudad.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-
 pycartociudad contains Python functions to access the CartoCiudad REST and WPS API (REST y WPS) from IGN with spanish cartography services.
-
 
 Getting Started
 ---------------
@@ -61,12 +59,12 @@ Features
 
 Geocoding
 ~~~~~~~~~
-Geocoding is the geolocation of addresses in Spain via Cartociudad API calls. Calling the ``geocode`` function returns the details of the closest address in Spain to the indicated address.
+Geocoding is the geolocation of addresses in Spain via Cartociudad API calls. Calling the ``geocode`` function returns the details of the closest address in Spain to the indicated address::
 
     import pycartociudad as pycc
     pycc.geocode('Plaza mayor 1, madrid')
 
-Returns:
+Returns::
 
     {
         "id":"280790001063",
@@ -92,12 +90,12 @@ Returns:
 Reverse geocoding
 ~~~~~~~~~~~~~~~~~
 
-Reverse geocoding is the search of an address details based on latitude and longitude coordinates.
+Reverse geocoding is the search of an address details based on latitude and longitude coordinates::
 
     import pycartociudad as pycc
     pycc.reverse_geocode(40.4472, -3.7076)
 
-Returns:
+Returns::
 
     {
         "id":"280790165933",
@@ -120,11 +118,11 @@ Returns:
         "refCatastral":"None"
     }
 
-Reverse geocoding can be performed to look for cadastral details with the cadastral parameter.
+Reverse geocoding can be performed to look for cadastral details with the cadastral parameter::
 
     pycc.reverse_geocode(40.4472476241486,-3.7076498426208833, cadastral=True)
 
-Returns:
+Returns::
 
     {
         "id":"None",
@@ -151,12 +149,12 @@ Returns:
 Get location info
 ~~~~~~~~~~~~~~~~~
 
-The ``get_location_info`` function gets extra information of a location using official spanish web map services, such as cadastre, census or geocoding information.
+The ``get_location_info`` function gets extra information of a location using official spanish web map services, such as cadastre, census or geocoding information::
 
     import pycartociudad as pycc
     pycc.get_location_info(40.4472476241486,-3.7076498426208833)
 
-Returns:
+Returns::
 
     {
         "cadastral_ref":"0079609VK4707G",
@@ -186,14 +184,14 @@ Returns:
 Route between two points
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-This function gets the route between two points (encoded with their latitude-longitude coordinates), either walking or in a vehicle.
+This function gets the route between two points (encoded with their latitude-longitude coordinates), either walking or in a vehicle::
 
     import pycartociudad as pycc
     d = pycc.route_between_two_points(40.447313139920475,-3.704361232340851,40.44204376380937,-3.699671450323607)
     for i in d['instructionsData']['instruction']:
         print(i['description'])
 
-Prints:
+Prints::
 
     Continúe por GLORIETA CUATRO CAMINOS
     Gire justo a la derecha por CALLE SANTA ENGRACIA
